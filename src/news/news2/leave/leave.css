@@ -1,0 +1,66 @@
+.leave-container77 {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.leave-title77 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.leave-form77 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group77 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input-field77 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-field77 label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-field77 input,
+.input-field77 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn77 {
+  background-color: #ff5722;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.submit-btn77:hover {
+  background-color: #e64a19;
+}

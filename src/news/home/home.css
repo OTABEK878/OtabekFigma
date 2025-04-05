@@ -1,0 +1,45 @@
+.home-container50 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../public/img/background\ \(4\).png"); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-left: 5%;
+  color: #111;
+  align-items: center;
+}
+
+.home-content50 {
+  max-width: 500px;
+}
+
+.breadcrumb23 {
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb23 span {
+  color: #000;
+}
+
+.home-title50 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.home-subtitle50 {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.home-content50 p{
+    padding-top: 30px;
+}
+
+.home-content50 h1{
+    padding-top: 30px;
+}

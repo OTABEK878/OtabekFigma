@@ -1,0 +1,165 @@
+.testimonials-container {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.partners-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  color: #bbb;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.partner svg {
+  font-size: 40px;
+  transition: 0.3s;
+}
+
+.partner:hover svg {
+  color: chartreuse;
+}
+
+.partner:hover p {
+  color: black;
+}
+
+.clients-section {
+  margin-top: 100px;
+}
+
+.client-feedback {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 150px;
+  text-align: left;
+}
+
+.feedback-text {
+  max-width: 600px;
+}
+
+.clients-title {
+  font-size: 36px;
+}
+
+.client-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.client-comment {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #666;
+}
+
+.client-name {
+  font-size: 18px;
+}
+
+.feedback-img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.client-top{
+  margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+  .partners-logos {
+    gap: 50px;
+  }
+
+  .partner svg {
+    font-size: 32px;
+  }
+
+  .partners-title, .clients-title {
+    font-size: 32px;
+  }
+
+  .client-feedback {
+    justify-content: center ;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .client-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .client-comment {
+    font-size: 16px;
+  }
+
+  .feedback-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-title, .clients-title {
+    font-size: 28px;
+  }
+
+  .partners-logos {
+    gap: 30px;
+  }
+
+  .partner svg {
+    font-size: 28px;
+  }
+
+  .client-feedback {
+    gap: 30px;
+  }
+
+  .client-comment {
+    font-size: 14px;
+  }
+
+  .feedback-img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-title, .clients-title {
+    font-size: 24px;
+  }
+
+  .partner svg {
+    font-size: 24px;
+  }
+
+  .client-comment {
+    font-size: 12px;
+  }
+
+  .feedback-img {
+    width: 200px;
+  }
+}

@@ -1,0 +1,52 @@
+.home-container100 {
+  background-image: url('../../../public/img/background\ \(5\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  color: #111;
+}
+
+.content100 {
+  max-width: 500px;
+}
+
+.breadcrumb100 {
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb100 .active100 {
+  color: #999;
+}
+
+.title100 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.description100 {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .home-container100 {
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  .title100 {
+    font-size: 36px;
+  }
+
+  .description100 {
+    font-size: 16px;
+  }
+}

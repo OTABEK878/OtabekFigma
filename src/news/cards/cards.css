@@ -1,0 +1,100 @@
+.container80 {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title80 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.nav80 {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav80 button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 161px;
+  flex-shrink: 0;
+}
+
+.nav80 button.active80 {
+  background: #ff5733;
+  color: white;
+}
+
+.cards80 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cards80 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards80 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card80 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+}
+
+.card80:hover {
+  transform: scale(1.03);
+}
+
+.card80 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content80 {
+  padding: 15px;
+}
+
+.card-content80 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.meta80 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.pagination80 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination80 span {
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #ddd;
+}

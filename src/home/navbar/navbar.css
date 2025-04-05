@@ -1,0 +1,127 @@
+.navbar {
+  background: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  font-size: 22px;
+  color: orange;
+}
+
+.contact-item p,
+.contact-item small {
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-info {
+    gap: 10px;
+  }
+  .contact-item p, .contact-item small {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 49px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    gap: 10px;
+    display: none;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .contact-info {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 80px;
+  }
+  .menu-icon {
+    font-size: 24px;
+  }
+  .nav-links {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links li a {
+    font-size: 13px;
+  }
+}

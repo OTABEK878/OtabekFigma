@@ -1,0 +1,39 @@
+.about-container77 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title77 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 10px 20px;
+}
+
+.quote-mark77 {
+  font-size: 24px;
+  color: #f04e30;
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links77 {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}

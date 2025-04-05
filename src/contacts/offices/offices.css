@@ -1,0 +1,144 @@
+.offices-container {
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+  background-color: #F4F5F6;
+}
+
+.offices-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.offices-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.offices-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.office {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.office h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.map-link {
+  color: red;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.find-us7 {
+  margin-top: 50px;
+}
+
+.find-us7 h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social-icons7 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icon7 {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon7:hover {
+  transform: scale(1.2);
+}
+
+.whatsapp7 {
+  color: #25D366;
+}
+
+.messenger7 {
+  color: #0084FF;
+}
+
+.facebook7 {
+  color: #1877F2;
+}
+
+.twitter7 {
+  color: #1DA1F2;
+}
+
+.youtube7 {
+  color: #FF0000;
+}
+
+@media (max-width: 1024px) {
+  .offices-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .office {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offices-title {
+    font-size: 28px;
+  }
+
+  .offices-subtitle {
+    font-size: 14px;
+  }
+
+  .office {
+    width: 90%;
+  }
+
+  .icon7 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offices-title {
+    font-size: 24px;
+  }
+
+  .offices-subtitle {
+    font-size: 12px;
+  }
+
+  .office {
+    width: 100%;
+  }
+
+  .social-icons7 {
+    gap: 10px;
+  }
+
+  .icon7 {
+    font-size: 22px;
+  }
+}

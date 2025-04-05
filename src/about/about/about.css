@@ -1,0 +1,36 @@
+.about-container91 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background: #fff;
+  margin-top: 50px;
+}
+
+.stat91 {
+  text-align: center;
+}
+
+.icon91 {
+  font-size: 40px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.about-container91 h2 {
+  font-size: 32px;
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.about-container91 p {
+  font-size: 16px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about-container91 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

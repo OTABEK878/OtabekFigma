@@ -1,0 +1,32 @@
+.home-container1 {
+  background-image: url('../../../public/services-img/background.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  color: #333;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: gray;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #222;
+  padding-top: 40px;
+}
+
+.content p {
+  font-size: 18px;
+  max-width: 500px;
+  line-height: 1.5;
+  color: #555;
+  padding-top: 40px;
+}

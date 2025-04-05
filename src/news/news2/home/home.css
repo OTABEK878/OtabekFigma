@@ -1,0 +1,60 @@
+.home-container77 {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.breadcrumb77 {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.breadcrumb77 .current77 {
+  font-weight: bold;
+  color: black;
+}
+
+.title77 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.meta77 {
+  font-size: 1rem;
+  color: gray;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category77 {
+  color: #ff5733;
+  font-weight: bold;
+}
+
+.hero-image77 {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icons77 {
+  display: flex;
+  gap: 15px;
+}
+
+.icon77 {
+  font-size: 24px;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.icon77:hover {
+  color: black;
+}

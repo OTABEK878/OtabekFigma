@@ -1,0 +1,34 @@
+.partners-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  color: #bbb;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.partner svg {
+  font-size: 40px;
+  transition: 0.3s;
+}
+
+.partner:hover svg {
+  color: chartreuse;
+}
+
+.partner:hover p {
+  color: black;
+}
