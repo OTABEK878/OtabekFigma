@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-left">
             <div className="footer-logo">
-            <h2 className="logo">CREATE<span className="highlight">X</span></h2>
+            <h2 style={{color: "White"}} className="logo">CREATE<span className="highlight">X</span></h2>
           <div className="footer-icons">
             <FaFacebookMessenger className="icon" />
             <FaFacebookF className="icon" />
@@ -60,7 +60,12 @@ const Footer = () => {
       
       <div className="footer-end">
         <p>© All rights reserved. Made with ❤️ by Createx Studio</p>
-        <button className="to-top">⬆ GO TO TOP</button>
+        <div className="go-top-wrapper">
+  <p className="go-top-text">GO TO TOP</p>
+  <button className="to-top-btn">↑</button>
+</div>
+
+
       </div>
     </footer>
   );

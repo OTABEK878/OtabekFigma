@@ -26,14 +26,14 @@ const Navbar = () => {
         <div className="navbar-right">
           <div className="contact-info">
             <div className="contact-item">
-              <FiPhone className="icon" />
+                <img style={{height: "30px"}} src="./img/iPhone.svg" alt="" />
               <div>
                 <small>Call us</small>
                 <p>(405) 555-0128</p>
               </div>
             </div>
             <div className="contact-item">
-              <BsChatDots className="icon" />
+              <img style={{height: "30px"}} src="./img/Chat.png" alt="" />
               <div>
                 <small>Talk to us</small>
                 <p>hello@createx.com</p>

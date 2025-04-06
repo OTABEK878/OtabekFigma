@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="home-container1">
+    <div className="homme-container">
+      <div className="home-container1">
       <div className="breadcrumb">
         <Link to="/services">Homepage</Link> / 
         <Link to="/services-2"> Services</Link> / 
@@ -17,6 +18,10 @@ const Home = () => {
           Createx Construction Bureau. We are doing our best to be a partner
           for all of your construction needs.
         </p>
+      </div>
+    </div>
+    <div className="img">
+        <img style={{width: "100%", height: "500px"}} src="./img/image.png" alt="" />
       </div>
     </div>
   );

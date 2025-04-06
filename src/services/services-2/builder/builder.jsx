@@ -22,10 +22,12 @@ const projects = [
 const Builder = () => {
   return (
     <div style={{ textAlign: "center" }} className="builder-container">
-      <h2 className="builder-title">
+      <div className="builder-title">
+      <h2>
       Related projects
       </h2>
-
+      <img src="./img/idle.png" alt="" />
+      </div>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>

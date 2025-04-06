@@ -13,7 +13,7 @@ const partners = [
 const Partners = () => {
   return (
     <div>
-    <h2 style={{textAlign: "center"}} className="partners-title">Supported by 12+ partners</h2>
+    <h2 style={{textAlign: "center"}} className="partners-title">Our clients</h2>
       <div className="partners-logos">
         {partners.map((partner, index) => (
           <div key={index} className="partner">

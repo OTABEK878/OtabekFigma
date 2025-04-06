@@ -1,8 +1,14 @@
 .pricing-container {
   text-align: center;
   padding: 40px 20px;
+  padding-top: 80px;
   margin-top: 100px;
+  background-image: url('../../../../public/img/Background\ \(9\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .pricing-container h2 {
   font-size: 32px;
@@ -56,25 +62,28 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4) {
 .pricing-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 100px;
   margin-top: 20px;
 }
 
 .pricing-buttons button {
-  background-color: #ff5733;  
-  color: white;
+  background-color: white;
+  border: 1px solid #FF5A30;
+  color: #FF5A30;
   font-size: 14px;
   font-weight: bold;
   padding: 12px 20px;
-  border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .pricing-buttons button:hover {
-  background-color: #e04e2a;
+  background-color: #FF5A30;
+  color: white;
 }
+
 
 @media (max-width: 768px) {
   .pricing-buttons {

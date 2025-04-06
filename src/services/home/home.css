@@ -1,8 +1,14 @@
+.homme-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  height: 81vh;
+}
+
 .home-container1 {
-  background-image: url('../../../public/services-img/background.png');
   background-size: cover;
   background-position: center;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

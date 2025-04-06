@@ -7,6 +7,9 @@
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .projects-grid {

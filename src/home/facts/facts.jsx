@@ -18,16 +18,17 @@ const Facts = () => {
         {factsData.map((fact, index) => (
           <div key={index} className="fact-card">
             <div className="fact-circle">
-              <CircularProgressbar
-                value={(fact.value / (fact.value > 100 ? 10000 : 100)) * 100}
-                text={`${fact.value}`}
-                styles={buildStyles({
-                  textColor: "#222",
-                  pathColor: fact.color,
-                  trailColor: "#eee",
-                  strokeLinecap: "round",
-                })}
-              />
+            <CircularProgressbar
+  value={(fact.value / (fact.value > 100 ? 10000 : 100)) * 100}
+  text={`${fact.value}${(fact.value === 98 || fact.value === 100) ? '%' : ''}`}
+  styles={buildStyles({
+    textColor: "#222",
+    pathColor: fact.color,
+    trailColor: "#eee",
+    strokeLinecap: "round",
+  })}
+/>
+
             </div>
             <p className="fact-text">{fact.text}</p>
           </div>

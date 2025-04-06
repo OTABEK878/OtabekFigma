@@ -42,7 +42,7 @@ const Contact150 = () => {
 
         <form onSubmit={handleSubmit} className="contact-form150">
           <div className="form-group150">
-            <input
+            <input style={{background: "#F4F5F6"}}
               type="text"
               name="name"
               placeholder="Your name"
@@ -50,7 +50,7 @@ const Contact150 = () => {
               onChange={handleChange}
               required
             />
-            <select name="interest" value={formData.interest} onChange={handleChange}>
+            <select style={{background: "#F4F5F6"}} name="interest" value={formData.interest} onChange={handleChange}>
               <option>Interior Design</option>
               <option>Architecture</option>
               <option>Construction</option>
@@ -58,7 +58,7 @@ const Contact150 = () => {
           </div>
 
           <div className="form-group150">
-            <input
+            <input style={{background: "#F4F5F6"}}
               type="text"
               name="phone"
               placeholder="Your phone number"
@@ -66,7 +66,7 @@ const Contact150 = () => {
               onChange={handleChange}
               required
             />
-            <select name="location" value={formData.location} onChange={handleChange}>
+            <select style={{background: "#F4F5F6"}} name="location" value={formData.location} onChange={handleChange}>
               <option>New York</option>
               <option>Los Angeles</option>
               <option>Chicago</option>
@@ -74,7 +74,7 @@ const Contact150 = () => {
           </div>
 
           <div className="form-group150">
-            <input
+            <input style={{background: "#F4F5F6"}}
               type="email"
               name="email"
               placeholder="Your working email"
@@ -85,7 +85,7 @@ const Contact150 = () => {
             <label>Preferred contact method:</label>
             <div className="contact-method-inputs">
             <label>
-              <input
+              <input style={{background: "#F4F5F6"}}
                 type="radio"
                 name="contactMethod"
                 value="Phone"
@@ -95,7 +95,7 @@ const Contact150 = () => {
               Phone
             </label>
             <label>
-              <input
+              <input style={{background: "#F4F5F6"}}
                 type="radio"
                 name="contactMethod"
                 value="Email"
@@ -105,7 +105,7 @@ const Contact150 = () => {
               Email
             </label>
             <label>
-              <input
+              <input style={{background: "#F4F5F6"}}
                 type="radio"
                 name="contactMethod"
                 value="Viber"
@@ -119,7 +119,7 @@ const Contact150 = () => {
           </div>
 
           <div style={{marginTop: "10px"}} className="form-group150">
-            <textarea style={{width: "450px"}}
+            <textarea style={{width: "450px", background: "#F4F5F6"}}
               name="message"
               placeholder="Your message"
               value={formData.message}
@@ -131,7 +131,7 @@ const Contact150 = () => {
  
 
           <div className="agreement150">
-            <input
+            <input style={{background: "#F4F5F6"}}
               type="checkbox"
               name="agreement"
               checked={formData.agreement}

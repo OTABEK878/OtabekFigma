@@ -1,7 +1,8 @@
-.about-container {
+.about-container33 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 500px;
   padding: 40px;
 }
 
@@ -9,6 +10,7 @@
   display: flex;
   max-width: 900px;
   background: white;
+  gap: 50px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -23,7 +25,7 @@
   padding-left: 20px;
 }
 
-h2 {
+.about-text h2 {
   font-size: 30px;
   font-weight: bold;
   color: #333;
@@ -50,15 +52,15 @@ h2 {
     padding: 15px;
   }
 
-  h2 {
+  .about-text h2 {
     font-size: 24px;
   }
 
-  h3 {
+  .about-text h3 {
     font-size: 18px;
   }
 
-  p {
+  .about-text h3 {
     font-size: 13px;
   }
 }

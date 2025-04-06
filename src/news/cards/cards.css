@@ -25,11 +25,15 @@
   border-radius: 5px;
   width: 161px;
   flex-shrink: 0;
+  background: none;
+  color: #9A9CA5;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.nav80 button.active80 {
-  background: #ff5733;
-  color: white;
+.nav80 button:hover {
+  border: 2px solid #FF5A30;
+  color: #FF5A30;
 }
 
 .cards80 {
@@ -96,5 +100,8 @@
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  background: #ddd;
+}
+
+.pagination80 span:hover {
+  color: #FF5A30;
 }

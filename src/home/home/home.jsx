@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home-container5">
       <div className="overlay">
-        <div className="content4">
+        <div style={{marginRight: "400px"}} className="content4">
           <h1 className="title">
             CREATE<span className="highlight">X</span>
           </h1>
@@ -29,7 +29,7 @@ const Home = () => {
             <FaArrowRight />
           </button>
         </div>
-        <div className="pagination">
+        <div style={{marginRight: "450px"}} className="pagination">
           <span className="active">01</span>
           <span>02</span>
           <span>03</span>
