@@ -5,9 +5,10 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home-container34">
+      <div className="abouttext">
       <div className="breadcrumb34">
-      <Link to="/about">Homepage</Link> / 
-      <Link to="/about-2"> About Us</Link> / 
+      <Link style={{textDecoration: "none", color: "black"}} to="/about">Homepage</Link> / 
+      <Link style={{textDecoration: "none", color: "black"}} to="/about-2"> About Us</Link> / 
       </div>
 
       <h1>ABOUT US</h1>
@@ -16,6 +17,7 @@ const Home = () => {
         Createx Construction Bureau has been successfully operating in the USA construction market since 2000. 
         We are proud to offer you quality construction and exemplary service.
       </p>
+      </div>
 
       <div className="background34">
         <div className="skyscrapers34"></div>

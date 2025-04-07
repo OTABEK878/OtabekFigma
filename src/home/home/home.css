@@ -44,10 +44,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   color: white;
   padding: 0 20px;
+  margin-left: 130px;
 }
 
 .title {
@@ -148,6 +148,13 @@
   }
   .description {
     font-size: 16px;
+    max-width: 80%;
+  }
+  .buttons {
+  }
+  .overlay {
+    margin-left: 0;
+    padding: 0 40px;
   }
 }
 
@@ -158,30 +165,57 @@
   .description {
     font-size: 14px;
     max-width: 90%;
+    text-align: center;
   }
   .buttons {
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .pagination {
+    gap: 40px;
+  }
+  .navigation {
+    width: 90%;
+    padding: 0 10px;
+  }
+  .overlay {
+    align-items: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .title, .subtitle4 {
     font-size: 32px;
+    text-align: center;
   }
   .description {
     font-size: 14px;
+    max-width: 100%;
+    text-align: center;
   }
   .buttons {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
   .learn-btn, .request-btn {
-    width: 100%;
+    width: 90%;
+    text-align: center;
   }
   .navigation {
     padding: 0 10px;
   }
   .nav-btn {
     padding: 8px;
+  }
+  .pagination {
+    gap: 20px;
+    font-size: 14px;
+  }
+  .overlay {
+    padding: 0 20px;
   }
 }

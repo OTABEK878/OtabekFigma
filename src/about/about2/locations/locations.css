@@ -163,3 +163,69 @@
 .send-button:hover {
   background: #e64a19;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .job-list {
+    width: 100%;
+  }
+
+  .job-card {
+    width: 90%;
+  }
+
+  .sidebar {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .apply-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .sidebar-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  .job-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .job-title {
+    font-size: 16px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cv-modal {
+    width: 95%;
+  }
+
+  .send-button {
+    font-size: 14px;
+  }
+}
+

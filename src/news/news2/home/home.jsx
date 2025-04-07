@@ -6,12 +6,13 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home-container77">
+      <div className="home-container88"> 
       <nav className="breadcrumb77">
-        <Link to="/news">Homepage</Link> / 
-        <Link to="/news-2"> News</Link> / 
+        <Link style={{textDecoration: 'none', color: 'black'}} to="/news">Homepage</Link> / 
+        <Link style={{textDecoration: 'none', color: 'black'}}  to="/news-2"> News</Link> / 
       </nav>
 
-      <h1 className="title77">How to Build Climate Change-Resilient Infrastructure</h1>
+      <h1 style={{fontSize: '64px'}} className="title77">How to Build Climate Change-Resilient Infrastructure</h1>
 
       <div className="meta77">
         <span className="category77">Industry News</span> 
@@ -25,6 +26,7 @@ const Home = () => {
         <FaFacebookF className="icon77" />
         <FaLinkedinIn className="icon77" />
         <FaTwitter className="icon77" />
+      </div>
       </div>
     </div>
   );

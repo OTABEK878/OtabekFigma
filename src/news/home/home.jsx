@@ -5,7 +5,7 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home-container50">
-      <div className="home-content50">
+      <div style={{paddingLeft: '90px'}} className="home-content50">
       <nav className="breadcrumb">
         <Link to="/news">Homepage</Link> / 
         <Link to="/news-2"> News</Link> / 

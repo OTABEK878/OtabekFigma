@@ -1,9 +1,15 @@
-.home-container77 {
-  max-width: 900px;
+.home-container77{
+  background-color: #F4F5F6;
+  height: 500px;
+  margin-top: 55px;
+  padding-top: 100px;
+}
+
+.home-container88 {
+  max-width: 1250px;
   margin: auto;
   padding: 20px;
   text-align: left;
-  margin-top: 100px;
 }
 
 .breadcrumb77 {
@@ -41,6 +47,8 @@
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  position: relative;
+  top: 100px;
 }
 
 .social-icons77 {
