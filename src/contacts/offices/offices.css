@@ -91,6 +91,34 @@
   color: #FF0000;
 }
 
+.offices-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+
+.office {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.office:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: -75px;
+  height: 80%;
+  width: 1px;
+  background-color: #ccc;
+}
+
+
 @media (max-width: 1024px) {
   .offices-list {
     flex-direction: column;

@@ -1,3 +1,7 @@
+.homme-containerr{
+  background-color: #F4F5F6;
+}
+
 .homme-container{
   display: flex;
   align-items: center;

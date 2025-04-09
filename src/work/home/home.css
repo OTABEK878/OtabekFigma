@@ -16,98 +16,6 @@
 }
 
 .header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-top: 20px;
-}
-
-.header p {
-  font-size: 16px;
-  color: black;
-  max-width: 600px;
-  padding-top: 20px;
-}
-
-.categories {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.category {
-  background: white;
-  width: 230px;
-  height: 150px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: black;
-  position: relative;
-  top: 130px;
-}
-
-.category img {
-  width: 40px;
-}
-
-.category .icon {
-  font-size: 40px;
-  color: #ff5722;
-  margin-bottom: 8px;
-}
-
-.category.active {
-  color: black;
-}
-
-.category.active .icon {
-  color: #ff5722;
-}
-
-.category:hover {
-  background: #FF5A30;
-  color: white;
-}
-
-.category:hover .icon {
-  color: white;
-}
-
-.category:hover img {
-  color: white;
-}
-
-/* Katta ekranlar uchun asosiy dizayn */
-.home-container7 {
-  margin: 0 auto;
-  padding: 150px;
-  background-image: url('../../../public/img/background\ \(8\).png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.breadcrumb {
-  font-size: 14px;
-  color: #ddd;
-  margin-bottom: 10px;
-}
-
-.header h1 {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -174,106 +82,13 @@
 }
 
 .category:hover img {
-  color: white;
+  filter: brightness(0) invert(1);
 }
 
-/* Katta ekranlar uchun asosiy dizayn */
-.home-container7 {
-  margin: 0 auto;
-  padding: 150px;
-  background-image: url('../../../public/img/background\ \(8\).png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.breadcrumb {
-  font-size: 14px;
-  color: #ddd;
-  margin-bottom: 10px;
-}
-
-.header h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  padding-top: 20px;
-}
-
-.header p {
-  font-size: 18px;
-  color: black;
-  max-width: 600px;
-  padding-top: 20px;
-}
-
-.categories {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.category {
-  background: white;
-  width: 230px;
-  height: 150px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  color: black;
-  position: relative;
-  top: 130px;
-}
-
-.category img {
-  width: 40px;
-}
-
-.category .icon {
-  font-size: 40px;
-  color: #ff5722;
-  margin-bottom: 8px;
-}
-
-.category.active {
-  color: black;
-}
-
-.category.active .icon {
-  color: #ff5722;
-}
-
-.category:hover {
-  background: #FF5A30;
-  color: white;
-}
-
-.category:hover .icon {
-  color: white;
-}
-
-.category:hover img {
-  color: white;
-}
-
-/* Planshetlar (1024px dan kichik ekranlar) */
 @media (max-width: 1024px) {
   .home-container7 {
-    padding: 100px 50px;
     height: auto;
+    padding: 0px;
   }
 
   .header h1 {
@@ -283,10 +98,6 @@
   .header p {
     font-size: 16px;
     max-width: 80%;
-  }
-
-  .categories {
-    justify-content: center;
   }
 
   .category {
@@ -300,10 +111,8 @@
   }
 }
 
-/* Planshet va kichik ekranlar (768px dan kichik) */
 @media (max-width: 768px) {
   .home-container7 {
-    padding: 80px 30px;
   }
 
   .header h1 {
@@ -331,10 +140,8 @@
   }
 }
 
-/* Mobil telefonlar (480px dan kichik) */
 @media (max-width: 480px) {
   .home-container7 {
-    padding: 60px 20px;
   }
 
   .header h1 {
@@ -360,5 +167,13 @@
 
   .category .icon {
     font-size: 24px;
+  }
+
+  .home-container72 p{
+    display: none;
+  }
+
+  .categories{
+    display: none;
   }
 }

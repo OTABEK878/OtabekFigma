@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="homme-container">
+    <div className="homme-containerr">
+          <div className="homme-container">
       <div className="home-container1">
       <div className="breadcrumb">
         <Link to="/services">Homepage</Link> / 
@@ -23,6 +24,7 @@ const Home = () => {
     <div className="img">
         <img style={{width: "100%", height: "500px"}} src="./img/image.png" alt="" />
       </div>
+    </div>
     </div>
   );
 };

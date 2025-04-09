@@ -12,7 +12,7 @@ const Home = () => {
         <Link style={{textDecoration: 'none', color: 'black'}}  to="/news-2"> News</Link> / 
       </nav>
 
-      <h1 style={{fontSize: '64px'}} className="title77">How to Build Climate Change-Resilient Infrastructure</h1>
+      <h1 style={{}} className="title77">How to Build Climate Change-Resilient Infrastructure</h1>
 
       <div className="meta77">
         <span className="category77">Industry News</span> 
