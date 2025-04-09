@@ -21,27 +21,25 @@ const projects = [
 
 const Builder = () => {
   return (
-    <div className="builder-container">
-      <h2 className="builder-title">
-      Similar projects
-      </h2>
+    <div className="builder-container177">
+      <h2 className="builder-title177">Similar projects</h2>
 
-      <div className="projects-grid">
+      <div className="projects-grid177">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card177" key={index}>
             <img src={project.image} alt={project.title} />
-            <div className="project-info">
+            <div className="project-info177">
               <h3>{project.title}</h3>
               <p>{project.category}</p>
-              <button className="view-project">VIEW PROJECT</button>
+              <button className="view-project177">VIEW PROJECT</button>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="portfolio-section">
+      <div className="portfolio-section177">
         <p>Explore all our works</p>
-        <button className="view-portfolio">VIEW PORTFOLIO</button>
+        <button className="view-portfolio177">VIEW PORTFOLIO</button>
       </div>
     </div>
   );

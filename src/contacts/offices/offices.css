@@ -130,6 +130,21 @@
     max-width: 400px;
   }
 }
+@media (max-width: 1024px) {
+  .offices-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .office {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .office:not(:last-child)::after {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   .offices-title {
