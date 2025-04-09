@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "react-circular-progressbar/dist/styles.css";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "./facts.css";
@@ -11,24 +13,27 @@ const factsData = [
 ];
 
 const Facts = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="facts-container">
+    <div className="facts-container" data-aos="fade-up">
       <h2 className="facts-title">Some facts and figures</h2>
       <div className="facts-grid">
         {factsData.map((fact, index) => (
-          <div key={index} className="fact-card">
+          <div key={index} className="fact-card" data-aos="zoom-in">
             <div className="fact-circle">
-            <CircularProgressbar
-  value={(fact.value / (fact.value > 100 ? 10000 : 100)) * 100}
-  text={`${fact.value}${(fact.value === 98 || fact.value === 100) ? '%' : ''}`}
-  styles={buildStyles({
-    textColor: "#222",
-    pathColor: fact.color,
-    trailColor: "#eee",
-    strokeLinecap: "round",
-  })}
-/>
-
+              <CircularProgressbar
+                value={(fact.value / (fact.value > 100 ? 10000 : 100)) * 100}
+                text={`${fact.value}${(fact.value === 98 || fact.value === 100) ? '%' : ''}`}
+                styles={buildStyles({
+                  textColor: "#222",
+                  pathColor: fact.color,
+                  trailColor: "#eee",
+                  strokeLinecap: "round",
+                })}
+              />
             </div>
             <p className="fact-text">{fact.text}</p>
           </div>

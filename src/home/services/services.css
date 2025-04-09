@@ -3,7 +3,9 @@
   padding: 50px 20px;
   background-color: #f8f8f8;
   padding-top: 100px;
+  z-index: 1;
 }
+
 
 .services-title5 {
   font-size: 32px;

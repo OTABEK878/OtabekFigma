@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./builder.css";
 
 const projects = [
@@ -20,15 +22,19 @@ const projects = [
 ];
 
 const Builder = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="builder-container">
+    <div className="builder-container" data-aos="fade-up">
       <h2 className="builder-title">
         Browse our selected projects <br /> and learn more about our work
       </h2>
 
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className="project-card" key={index} data-aos="zoom-in">
             <img src={project.image} alt={project.title} />
             <div className="project-info">
               <h3>{project.title}</h3>
@@ -39,7 +45,7 @@ const Builder = () => {
         ))}
       </div>
 
-      <div className="portfolio-section">
+      <div className="portfolio-section" data-aos="fade-up">
         <p>Explore all our works</p>
         <button className="view-portfolio">VIEW PORTFOLIO</button>
       </div>
