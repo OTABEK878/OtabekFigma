@@ -1,5 +1,5 @@
 import React from "react";
-import "./Decisions.css";
+import "./decisions.css";
 
 const Decisions = () => {
   return (
