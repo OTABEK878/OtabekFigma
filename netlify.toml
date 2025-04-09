@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"  # Build uchun buyruq
+  publish = "dist"  # Build natijalari saqlanadigan papka (React uchun "build", Vite uchun "dist")
+
+[[headers]]
+  for = "/img/*"  # Rasm fayllari uchun sozlamalar
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

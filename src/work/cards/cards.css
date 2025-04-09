@@ -54,13 +54,6 @@
 }
 
 @media (max-width: 1024px) {
-  .projects-grid {
-  
-  }
-
-  .project-card img {
-  }
-
   .project-info h3 {
     font-size: 18px;
   }
