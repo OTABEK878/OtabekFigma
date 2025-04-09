@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Locations.css";
+import "./locations.css";
 import { FaMapMarkerAlt, FaClock, FaPaperclip } from "react-icons/fa";
 
 const jobListings = [
