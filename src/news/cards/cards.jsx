@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./cards.css";
 
 const cardData = [
@@ -47,10 +49,14 @@ const cardData = [
 ];
 
 const Cards = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className="container80">
-      <h1 className="title80">Categories</h1>
-      <div className="nav80">
+      <h1 className="title80" data-aos="fade-up">Categories</h1>
+      <div className="nav80" data-aos="fade-up" data-aos-delay="200">
         <button className="active80">All News</button>
         <button>Company News</button>
         <button>Innovation</button>
@@ -60,7 +66,7 @@ const Cards = () => {
       </div>
       <div className="cards80">
         {cardData.map((card, index) => (
-          <div key={index} className="card80">
+          <div key={index} className="card80" data-aos="fade-up" data-aos-delay={`${index * 100}`}>
             <img src={card.image} alt={card.title} />
             <div className="card-content80">
               <h2>{card.title}</h2>
@@ -72,7 +78,7 @@ const Cards = () => {
           </div>
         ))}
       </div>
-      <div className="pagination80">
+      <div className="pagination80" data-aos="fade-up" data-aos-delay="500">
         <span>1</span>
         <span>2</span>
         <span>3</span>

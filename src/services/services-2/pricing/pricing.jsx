@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./pricing.css";
 
 const Pricing = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className="pricing-container">
-      <h2>Pricing</h2>
-      <p>We offer you three categories of construction.</p>
+      <h2 data-aos="fade-down">Pricing</h2>
+      <p data-aos="fade-down" data-aos-delay="200">
+        We offer you three categories of construction.
+      </p>
 
-      <div className="pricing-table">
+      <div className="pricing-table" data-aos="fade-up" data-aos-delay="400">
         <table>
           <thead>
             <tr>
@@ -32,9 +40,9 @@ const Pricing = () => {
       </div>
 
       <div className="pricing-buttons">
-        <button>Send Request</button>
-        <button>Send Request</button>
-        <button>Send Request</button>
+        <button data-aos="zoom-in" data-aos-delay="600">Send Request</button>
+        <button data-aos="zoom-in" data-aos-delay="800">Send Request</button>
+        <button data-aos="zoom-in" data-aos-delay="1000">Send Request</button>
       </div>
     </div>
   );

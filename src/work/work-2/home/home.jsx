@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
@@ -16,13 +18,17 @@ const images = [
 const Home = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className="home-container23">
-      <div className="breadcrumb">
+      <div className="breadcrumb" data-aos="fade-up">
         <a href="/work">Homepage</a> / <a href="/work-2">Work</a> / <span>Modern Cottage</span>
       </div>
 
-      <h1 className="title3">Modern Cottage</h1>
+      <h1 className="title3" data-aos="fade-up">Modern Cottage</h1>
 
       <Swiper
         modules={[Navigation, Thumbs]}
@@ -30,9 +36,10 @@ const Home = () => {
         loop={true}
         thumbs={{ swiper: thumbsSwiper }}
         className="main-slider"
+        data-aos="zoom-in"
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} data-aos="fade-up">
             <img src={img} alt={`Slide ${index + 1}`} />
           </SwiperSlide>
         ))}
@@ -48,7 +55,7 @@ const Home = () => {
           className="thumb-slider"
         >
           {images.map((img, index) => (
-            <SwiperSlide key={index} className="thumb-slide">
+            <SwiperSlide key={index} className="thumb-slide" data-aos="zoom-in" data-aos-delay={index * 100}>
               <img src={img} alt={`Thumbnail ${index + 1}`} />
             </SwiperSlide>
           ))}

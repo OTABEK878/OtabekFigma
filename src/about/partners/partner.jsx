@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBuilding, FaCity, FaHome, FaStore, FaHouseUser, FaHospital, FaChartPie, FaHeart, FaLandmark, FaDumbbell } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./partner.css";
 
 const partners = [
@@ -18,12 +20,16 @@ const partners = [
 ];
 
 const Partner = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div style={{ background: "white" }} className="testimonials-container">
-      <h2 className="partners-title">Supported by 12+ partners</h2>
+    <div style={{ background: "white" }} className="testimonials-container" data-aos="fade-up">
+      <h2 className="partners-title" data-aos="fade-down">Supported by 12+ partners</h2>
       <div className="partners-logos">
         {partners.map((partner, index) => (
-          <div key={index} className="partner">
+          <div key={index} className="partner" data-aos="zoom-in">
             {partner.icon}
             <p>{partner.name}</p>
           </div>

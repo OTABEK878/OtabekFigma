@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./history.css";
 
 const timelineData = [
@@ -16,6 +18,10 @@ const timelineData = [
 const History = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const handlePrev = () => {
     if (selectedIndex > 0) {
       setSelectedIndex(selectedIndex - 1);
@@ -27,43 +33,48 @@ const History = () => {
       setSelectedIndex(selectedIndex + 1);
     }
   };
-  return (
-    <div className="historyy">
-    <div className="history-head">
-     <h2 className="history-title">Our History</h2>
 
-<div className="history-buttons">
-<button className="history-button" onClick={handlePrev} disabled={selectedIndex === 0}>
-←
-</button>
-<button className="history-button next" onClick={handleNext} disabled={selectedIndex === timelineData.length - 1}>
-→
-</button>
-</div>
+  return (
+    <div className="historyy" data-aos="fade-up">
+      <div className="history-head" data-aos="fade-down">
+        <h2 className="history-title">Our History</h2>
+
+        <div className="history-buttons">
+          <button className="history-button" onClick={handlePrev} disabled={selectedIndex === 0}>
+            ←
+          </button>
+          <button className="history-button next" onClick={handleNext} disabled={selectedIndex === timelineData.length - 1}>
+            →
+          </button>
         </div>
-    <div className="history-container">
-      <div className="history-sidebar">
-        <ul className="history-list">
-          {timelineData.map((item, index) => (
-            <li style={{paddingTop: "10px"}}
-              key={index}
-              className={`history-item ${index === selectedIndex ? "active" : ""}`}
-              onClick={() => setSelectedIndex(index)}
-            >
-              {index === selectedIndex ? "• " : "○ "} {item.date}
-            </li>
-          ))}
-        </ul>
       </div>
-      <div className="history-content">
-        <img
-          src={timelineData[selectedIndex].image}
-          alt="Project"
-          className="history-image"
-        />
-        <p style={{width: "700px", fontSize: "15px"}} className="history-text">{timelineData[selectedIndex].text}</p>  
+
+      <div className="history-container">
+        <div className="history-sidebar" data-aos="fade-right">
+          <ul className="history-list">
+            {timelineData.map((item, index) => (
+              <li style={{ paddingTop: "10px" }}
+                key={index}
+                className={`history-item ${index === selectedIndex ? "active" : ""}`}
+                onClick={() => setSelectedIndex(index)}
+              >
+                {index === selectedIndex ? "• " : "○ "} {item.date}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="history-content" data-aos="fade-left">
+          <img
+            src={timelineData[selectedIndex].image}
+            alt="Project"
+            className="history-image"
+          />
+          <p style={{ width: "700px", fontSize: "15px" }} className="history-text">
+            {timelineData[selectedIndex].text}
+          </p>  
+        </div>
       </div>
-    </div>
     </div>
   );
 };

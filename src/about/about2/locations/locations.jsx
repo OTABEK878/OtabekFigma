@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import "./locations.css";
+import React, { useState, useEffect } from "react";
 import { FaMapMarkerAlt, FaClock, FaPaperclip } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./locations.css";
 
 const jobListings = [
   { location: "New York", type: "Full Time", title: "Heavy Equipment Operator" },
@@ -14,9 +16,13 @@ const Locations = () => {
   const [isSubscribeOpen, setSubscribeOpen] = useState(false);
   const [isCvOpen, setCvOpen] = useState(false);
 
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
+
   return (
     <div className="container">
-      <div className="job-list">
+      <div className="job-list" data-aos="fade-up">
         {jobListings.map((job, index) => (
           <div key={index} className="job-card">
             <div className="job-info">
@@ -29,7 +35,8 @@ const Locations = () => {
           </div>
         ))}
       </div>
-      <div className="sidebar">
+      
+      <div className="sidebar" data-aos="fade-up">
         <h3 className="sidebar-title">Didn't find what you were looking for?</h3>
         <p className="sidebar-text">
           Send your CV or subscribe to our newsletter to receive information about new vacancies.
@@ -41,7 +48,7 @@ const Locations = () => {
       </div>
 
       {isSubscribeOpen && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" data-aos="fade-in">
           <div className="modal">
             <button className="close-button" onClick={() => setSubscribeOpen(false)}>✖</button>
             <h2>Subscribe to our newsletter</h2>
@@ -57,7 +64,7 @@ const Locations = () => {
       )}
 
       {isCvOpen && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" data-aos="fade-in">
           <div className="modal cv-modal">
             <button className="close-button" onClick={() => setCvOpen(false)}>✖</button>
             <h2>Send your CV</h2>

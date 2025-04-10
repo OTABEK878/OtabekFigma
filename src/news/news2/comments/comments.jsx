@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./comments.css";
 
 const Comments = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, easing: "ease-in-out", once: true });
+  }, []);
+
   const comments = [
     {
       name: "Devon Lanemm",
@@ -27,17 +33,17 @@ const Comments = () => {
 
   return (
     <div className="comments-container">
-      <h2 className="comments-title">4 comments</h2>
+      <h2 className="comments-title" data-aos="fade-up">4 comments</h2>
       {comments.map((comment, index) => (
-        <div key={index} className="comment">
-            <div className="name">
+        <div key={index} className="comment" data-aos="fade-up" data-aos-delay={index * 200}>
+          <div className="name">
             <h3 className="comment-name">{comment.name}</h3>
             <span className="comment-date">{comment.date}</span>
-            </div>
-            <div className="people">
+          </div>
+          <div className="people">
             <p className="comment-text">{comment.text}</p>
             <a href="#" className="comment-reply">↩ Reply</a>
-            </div>
+          </div>
         </div>
       ))}
     </div>

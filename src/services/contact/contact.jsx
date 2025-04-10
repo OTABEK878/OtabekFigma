@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./contact.css";
 
 const Contact = () => {
@@ -9,6 +11,10 @@ const Contact = () => {
     message: "",
     agreed: false,
   });
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -45,38 +51,38 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <div className="contact-bg"></div>
+      <div className="contact-bg" data-aos="fade-in"></div>
 
-      <div className="contact-form">
+      <div className="contact-form" data-aos="fade-up">
         <h2>A quick way to discuss details</h2>
         <form onSubmit={handleSubmit}>
           <div className="inputs">
-            <div>
+            <div data-aos="fade-right">
               <label>Name*</label>
               <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" required />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <label>Phone*</label>
               <input type="number" name="phone" value={formData.phone} onChange={handleChange} placeholder="Your phone number" required />
             </div>
-            <div>
+            <div data-aos="fade-right">
               <label>Email</label>
               <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your working email" />
             </div>
-            <div>
+            <div data-aos="fade-left">
               <label>Message*</label>
               <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your message" required></textarea>
             </div>
           </div>
 
-          <div className="checkbox-container">
+          <div className="checkbox-container" data-aos="zoom-in">
             <input type="checkbox" id="agree" name="agreed" checked={formData.agreed} onChange={handleChange} />
             <label htmlFor="agree">
               I agree to receive communications from Createx Construction Bureau.
             </label>
           </div>
 
-          <div className="btn">
+          <div className="btn" data-aos="flip-up">
             <button type="submit" className="submit-btn">SEND REQUEST</button>
           </div>
         </form>

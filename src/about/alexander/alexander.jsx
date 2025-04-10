@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./alexander.css";
 
 const Alexander = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="alexander-container">
+    <div className="alexander-container" data-aos="zoom-in">
       <div className="alexander-content">
         <img
           src="./img/image (12).jpg"
           alt="Courtney Alexander"
           className="alexander-image"
+          data-aos="fade-right"
         />
-        <div className="alexander-text">
+        <div className="alexander-text" data-aos="fade-left">
           <span className="quote-mark">“</span>
           <p className="quote-text">
             Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in.
