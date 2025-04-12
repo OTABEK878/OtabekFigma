@@ -140,52 +140,62 @@
  
 @media (max-width: 1200px) {
   .overlay {
-    margin-left: 80px;
-  }
-
-  .pagination {
-    margin-right: 250px;
-    gap: 100px;
-  }
-}
-
-@media (max-width: 992px) {
-  .overlay {
-    margin-left: 40px;
+    margin: 0 auto;
+    padding: 0 40px;
     align-items: center;
     text-align: center;
   }
 
   .pagination {
-    margin-right: 100px;
-    gap: 60px;
+    gap: 100px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay {
+    padding: 0 30px;
+    text-align: center;
+    align-items: center;
   }
 
-  .content4 {
-    align-items: center;
+  .pagination {
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .title, .subtitle4 {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .home-container5 {
-    background-position: center center;
-  }
-
-  .overlay {
-    margin-left: 0;
-    padding: 0 20px;
-  }
-
-  .pagination {
-    margin-right: 0;
-    justify-content: center;
-  }
-
   .title, .subtitle4 {
     font-size: 36px;
   }
 
   .description {
+    font-size: 14px;
+  }
+
+  .pagination {
+    gap: 40px;
+    justify-content: center;
+    bottom: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn-btn, .request-btn {
+    width: 80%;
     font-size: 14px;
   }
 }
@@ -203,19 +213,22 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 10px;
+    bottom: 5px;
   }
 
   .learn-btn, .request-btn {
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .content4 {
-    padding-top: 30px;
+  .buttons {
+    gap: 10px;
   }
 
-  .overlay{
-    margin-left: -550px;
+  .overlay {
+    padding: 0 20px;
+    text-align: start;
+    align-items: center;
   }
 }
+
