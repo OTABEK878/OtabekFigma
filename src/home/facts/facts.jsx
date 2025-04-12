@@ -23,7 +23,7 @@ const Facts = () => {
       <div className="facts-grid">
         {factsData.map((fact, index) => (
           <div key={index} className="fact-card" data-aos="zoom-in">
-            <div className="fact-circle">
+            <div className="fact-circle pulse-animation">
               <CircularProgressbar
                 value={(fact.value / (fact.value > 100 ? 10000 : 100)) * 100}
                 text={`${fact.value}${(fact.value === 98 || fact.value === 100) ? '%' : ''}`}

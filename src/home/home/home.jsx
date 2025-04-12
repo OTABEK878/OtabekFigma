@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="home-container5">
-      <div className="overlay">
+      <div style={{marginLeft: '150px'}} className="overlay">
         <div className="content4" data-aos="zoom-in">
           <h1 className="title">
             CREATE<span className="highlight">X</span>
